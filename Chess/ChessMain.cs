@@ -32,7 +32,8 @@ namespace Chess
 		private System.Windows.Forms.MenuItem menuItem8;
 		private System.Windows.Forms.MenuItem menuItem9;
 		private System.Windows.Forms.MenuItem mnuNewGame;
-		private System.Windows.Forms.MenuItem mnuFileExit;
+		private System.Windows.Forms.MenuItem mnuNew960Game;
+        private System.Windows.Forms.MenuItem mnuFileExit;
 		private System.Windows.Forms.MenuItem menuItem11;
 		private System.Windows.Forms.Panel panel1;
 		private System.Windows.Forms.MenuItem menuItem14;
@@ -54,7 +55,11 @@ namespace Chess
         private MenuItem mnuAbout;
         private MenuItem mnuSaveGame;
         private MenuItem mnuLoadGame;
-		private System.Windows.Forms.MenuItem mnuShowMoveHelp;
+        private MenuItem menuItem2;
+        private MenuItem menuItem3;
+        private MenuItem menuItem4;
+        private System.Windows.Forms.MenuItem mnuShowMoveHelp;
+        public static bool Enable960 = false;
 		
 		public ChessMain()
 		{
@@ -90,6 +95,7 @@ namespace Chess
             this.MainMenu = new System.Windows.Forms.MainMenu(this.components);
             this.menuItem1 = new System.Windows.Forms.MenuItem();
             this.mnuNewGame = new System.Windows.Forms.MenuItem();
+            this.mnuNew960Game = new System.Windows.Forms.MenuItem();
             this.mnuLoadGame = new System.Windows.Forms.MenuItem();
             this.mnuSaveGame = new System.Windows.Forms.MenuItem();
             this.menuItem9 = new System.Windows.Forms.MenuItem();
@@ -108,14 +114,16 @@ namespace Chess
             this.mnuShowComputerThinkDepth = new System.Windows.Forms.MenuItem();
             this.mnuHelp = new System.Windows.Forms.MenuItem();
             this.mnuAbout = new System.Windows.Forms.MenuItem();
+            this.menuItem2 = new System.Windows.Forms.MenuItem();
+            this.menuItem3 = new System.Windows.Forms.MenuItem();
             this.menuItem5 = new System.Windows.Forms.MenuItem();
             this.menuItem6 = new System.Windows.Forms.MenuItem();
             this.menuItem7 = new System.Windows.Forms.MenuItem();
             this.menuItem8 = new System.Windows.Forms.MenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lstHistory = new System.Windows.Forms.ListView();
-            this.LstIndex = new System.Windows.Forms.ColumnHeader();
-            this.lstMove = new System.Windows.Forms.ColumnHeader();
+            this.LstIndex = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.lstMove = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.WhitePlayerTime = new System.Windows.Forms.Label();
             this.BlackPlayerTime = new System.Windows.Forms.Label();
             this.WhitePlayerName = new System.Windows.Forms.Label();
@@ -127,6 +135,7 @@ namespace Chess
             this.PnlComputerThinkStatus = new System.Windows.Forms.Panel();
             this.LblComuterThinkLabel = new System.Windows.Forms.Label();
             this.PrgComputerThinkDepth = new System.Windows.Forms.ProgressBar();
+            this.menuItem4 = new System.Windows.Forms.MenuItem();
             this.ChessCaptureBar = new Chess.CaptureBar();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.WhitePlayerImage)).BeginInit();
@@ -148,6 +157,7 @@ namespace Chess
             this.menuItem1.Index = 0;
             this.menuItem1.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
             this.mnuNewGame,
+            this.mnuNew960Game,
             this.mnuLoadGame,
             this.mnuSaveGame,
             this.menuItem9,
@@ -158,31 +168,38 @@ namespace Chess
             // 
             this.mnuNewGame.Index = 0;
             this.mnuNewGame.Shortcut = System.Windows.Forms.Shortcut.CtrlN;
-            this.mnuNewGame.Text = "&New";
+            this.mnuNewGame.Text = "&Chess";
             this.mnuNewGame.Click += new System.EventHandler(this.mnuNewGame_Click);
+            // 
+            // mnuNew960Game
+            // 
+            this.mnuNew960Game.Index = 1;
+            this.mnuNew960Game.Shortcut = System.Windows.Forms.Shortcut.CtrlShiftN;
+            this.mnuNew960Game.Text = "&Chess 960";
+            this.mnuNew960Game.Click += new System.EventHandler(this.mnuNew960Game_Click);
             // 
             // mnuLoadGame
             // 
-            this.mnuLoadGame.Index = 1;
+            this.mnuLoadGame.Index = 2;
             this.mnuLoadGame.Text = "&Load Game";
             this.mnuLoadGame.Click += new System.EventHandler(this.mnuLoadGame_Click);
             // 
             // mnuSaveGame
             // 
             this.mnuSaveGame.Enabled = false;
-            this.mnuSaveGame.Index = 2;
+            this.mnuSaveGame.Index = 3;
             this.mnuSaveGame.Shortcut = System.Windows.Forms.Shortcut.CtrlS;
             this.mnuSaveGame.Text = "&Save Game";
             this.mnuSaveGame.Click += new System.EventHandler(this.mnuSaveGame_Click);
             // 
             // menuItem9
             // 
-            this.menuItem9.Index = 3;
+            this.menuItem9.Index = 4;
             this.menuItem9.Text = "-";
             // 
             // mnuFileExit
             // 
-            this.mnuFileExit.Index = 4;
+            this.mnuFileExit.Index = 5;
             this.mnuFileExit.Text = "&Exit";
             this.mnuFileExit.Click += new System.EventHandler(this.mnuFileExit_Click);
             // 
@@ -286,6 +303,16 @@ namespace Chess
             this.mnuAbout.Text = "About";
             this.mnuAbout.Click += new System.EventHandler(this.mnuAbout_Click);
             // 
+            // menuItem2
+            // 
+            this.menuItem2.Index = -1;
+            this.menuItem2.Text = "Chess";
+            // 
+            // menuItem3
+            // 
+            this.menuItem3.Index = -1;
+            this.menuItem3.Text = "Chess 960";
+            // 
             // menuItem5
             // 
             this.menuItem5.Index = -1;
@@ -317,9 +344,9 @@ namespace Chess
             this.panel1.Controls.Add(this.WhitePlayerImage);
             this.panel1.Controls.Add(this.BlackPlayerImage);
             this.panel1.ForeColor = System.Drawing.Color.Red;
-            this.panel1.Location = new System.Drawing.Point(504, 0);
+            this.panel1.Location = new System.Drawing.Point(806, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(208, 515);
+            this.panel1.Size = new System.Drawing.Size(333, 753);
             this.panel1.TabIndex = 0;
             // 
             // lstHistory
@@ -331,10 +358,10 @@ namespace Chess
             this.lstHistory.GridLines = true;
             this.lstHistory.HideSelection = false;
             this.lstHistory.LabelEdit = true;
-            this.lstHistory.Location = new System.Drawing.Point(18, 226);
+            this.lstHistory.Location = new System.Drawing.Point(29, 330);
             this.lstHistory.MultiSelect = false;
             this.lstHistory.Name = "lstHistory";
-            this.lstHistory.Size = new System.Drawing.Size(154, 254);
+            this.lstHistory.Size = new System.Drawing.Size(246, 372);
             this.lstHistory.TabIndex = 6;
             this.lstHistory.UseCompatibleStateImageBehavior = false;
             this.lstHistory.View = System.Windows.Forms.View.Details;
@@ -354,9 +381,9 @@ namespace Chess
             this.WhitePlayerTime.BackColor = System.Drawing.Color.White;
             this.WhitePlayerTime.Font = new System.Drawing.Font("Verdana", 12.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WhitePlayerTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.WhitePlayerTime.Location = new System.Drawing.Point(70, 138);
+            this.WhitePlayerTime.Location = new System.Drawing.Point(112, 202);
             this.WhitePlayerTime.Name = "WhitePlayerTime";
-            this.WhitePlayerTime.Size = new System.Drawing.Size(96, 24);
+            this.WhitePlayerTime.Size = new System.Drawing.Size(154, 35);
             this.WhitePlayerTime.TabIndex = 5;
             // 
             // BlackPlayerTime
@@ -364,9 +391,9 @@ namespace Chess
             this.BlackPlayerTime.BackColor = System.Drawing.Color.White;
             this.BlackPlayerTime.Font = new System.Drawing.Font("Verdana", 12.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BlackPlayerTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.BlackPlayerTime.Location = new System.Drawing.Point(70, 32);
+            this.BlackPlayerTime.Location = new System.Drawing.Point(112, 47);
             this.BlackPlayerTime.Name = "BlackPlayerTime";
-            this.BlackPlayerTime.Size = new System.Drawing.Size(96, 24);
+            this.BlackPlayerTime.Size = new System.Drawing.Size(154, 35);
             this.BlackPlayerTime.TabIndex = 4;
             // 
             // WhitePlayerName
@@ -374,9 +401,9 @@ namespace Chess
             this.WhitePlayerName.BackColor = System.Drawing.Color.Transparent;
             this.WhitePlayerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WhitePlayerName.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.WhitePlayerName.Location = new System.Drawing.Point(24, 179);
+            this.WhitePlayerName.Location = new System.Drawing.Point(38, 262);
             this.WhitePlayerName.Name = "WhitePlayerName";
-            this.WhitePlayerName.Size = new System.Drawing.Size(136, 24);
+            this.WhitePlayerName.Size = new System.Drawing.Size(218, 35);
             this.WhitePlayerName.TabIndex = 3;
             // 
             // BlackPlayerName
@@ -384,17 +411,17 @@ namespace Chess
             this.BlackPlayerName.BackColor = System.Drawing.Color.Transparent;
             this.BlackPlayerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BlackPlayerName.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.BlackPlayerName.Location = new System.Drawing.Point(24, 72);
+            this.BlackPlayerName.Location = new System.Drawing.Point(38, 105);
             this.BlackPlayerName.Name = "BlackPlayerName";
-            this.BlackPlayerName.Size = new System.Drawing.Size(136, 24);
+            this.BlackPlayerName.Size = new System.Drawing.Size(218, 35);
             this.BlackPlayerName.TabIndex = 2;
             // 
             // WhitePlayerImage
             // 
             this.WhitePlayerImage.BackColor = System.Drawing.Color.Transparent;
-            this.WhitePlayerImage.Location = new System.Drawing.Point(24, 126);
+            this.WhitePlayerImage.Location = new System.Drawing.Point(38, 184);
             this.WhitePlayerImage.Name = "WhitePlayerImage";
-            this.WhitePlayerImage.Size = new System.Drawing.Size(45, 50);
+            this.WhitePlayerImage.Size = new System.Drawing.Size(72, 73);
             this.WhitePlayerImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.WhitePlayerImage.TabIndex = 1;
             this.WhitePlayerImage.TabStop = false;
@@ -402,9 +429,9 @@ namespace Chess
             // BlackPlayerImage
             // 
             this.BlackPlayerImage.BackColor = System.Drawing.Color.Transparent;
-            this.BlackPlayerImage.Location = new System.Drawing.Point(24, 20);
+            this.BlackPlayerImage.Location = new System.Drawing.Point(38, 29);
             this.BlackPlayerImage.Name = "BlackPlayerImage";
-            this.BlackPlayerImage.Size = new System.Drawing.Size(45, 50);
+            this.BlackPlayerImage.Size = new System.Drawing.Size(72, 73);
             this.BlackPlayerImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.BlackPlayerImage.TabIndex = 0;
             this.BlackPlayerImage.TabStop = false;
@@ -420,9 +447,9 @@ namespace Chess
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.Controls.Add(this.ChessCaptureBar);
             this.panel2.Controls.Add(this.PnlComputerThinkStatus);
-            this.panel2.Location = new System.Drawing.Point(0, 504);
+            this.panel2.Location = new System.Drawing.Point(0, 737);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(695, 86);
+            this.panel2.Size = new System.Drawing.Size(1112, 125);
             this.panel2.TabIndex = 1;
             // 
             // PnlComputerThinkStatus
@@ -430,40 +457,45 @@ namespace Chess
             this.PnlComputerThinkStatus.BackColor = System.Drawing.Color.White;
             this.PnlComputerThinkStatus.Controls.Add(this.LblComuterThinkLabel);
             this.PnlComputerThinkStatus.Controls.Add(this.PrgComputerThinkDepth);
-            this.PnlComputerThinkStatus.Location = new System.Drawing.Point(20, 16);
+            this.PnlComputerThinkStatus.Location = new System.Drawing.Point(32, 23);
             this.PnlComputerThinkStatus.Name = "PnlComputerThinkStatus";
-            this.PnlComputerThinkStatus.Size = new System.Drawing.Size(655, 55);
+            this.PnlComputerThinkStatus.Size = new System.Drawing.Size(1048, 81);
             this.PnlComputerThinkStatus.TabIndex = 0;
             // 
             // LblComuterThinkLabel
             // 
             this.LblComuterThinkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblComuterThinkLabel.ForeColor = System.Drawing.Color.Blue;
-            this.LblComuterThinkLabel.Location = new System.Drawing.Point(5, 32);
+            this.LblComuterThinkLabel.Location = new System.Drawing.Point(8, 47);
             this.LblComuterThinkLabel.Name = "LblComuterThinkLabel";
-            this.LblComuterThinkLabel.Size = new System.Drawing.Size(640, 16);
+            this.LblComuterThinkLabel.Size = new System.Drawing.Size(1024, 23);
             this.LblComuterThinkLabel.TabIndex = 1;
             // 
             // PrgComputerThinkDepth
             // 
-            this.PrgComputerThinkDepth.Location = new System.Drawing.Point(3, 3);
+            this.PrgComputerThinkDepth.Location = new System.Drawing.Point(5, 4);
             this.PrgComputerThinkDepth.Name = "PrgComputerThinkDepth";
-            this.PrgComputerThinkDepth.Size = new System.Drawing.Size(659, 24);
+            this.PrgComputerThinkDepth.Size = new System.Drawing.Size(1054, 35);
             this.PrgComputerThinkDepth.TabIndex = 0;
+            // 
+            // menuItem4
+            // 
+            this.menuItem4.Index = -1;
+            this.menuItem4.Text = "Yeet";
             // 
             // ChessCaptureBar
             // 
-            this.ChessCaptureBar.Location = new System.Drawing.Point(18, 16);
+            this.ChessCaptureBar.Location = new System.Drawing.Point(29, 23);
             this.ChessCaptureBar.Name = "ChessCaptureBar";
-            this.ChessCaptureBar.Size = new System.Drawing.Size(660, 55);
+            this.ChessCaptureBar.Size = new System.Drawing.Size(1056, 81);
             this.ChessCaptureBar.TabIndex = 1;
             // 
             // ChessMain
             // 
-            this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
+            this.AutoScaleBaseSize = new System.Drawing.Size(8, 19);
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(694, 590);
+            this.ClientSize = new System.Drawing.Size(725, 681);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -522,6 +554,7 @@ namespace Chess
 		// Menu Handler
 		private void mnuNewGame_Click(object sender, System.EventArgs e)
 		{
+            Enable960 = false;
 			GameObj.NewGame();	// Initialize the new game
 
 			// Initialize computer player characterstics
@@ -533,7 +566,21 @@ namespace Chess
 			}
 		}
 
-		private void mnuFileExit_Click(object sender, System.EventArgs e)
+        private void mnuNew960Game_Click(object sender, System.EventArgs e)
+        {
+            Enable960 = true;
+            GameObj.NewGame();  // Initialize the new game
+
+            // Initialize computer player characterstics
+            if (GameObj.ChessGame != null)
+            {
+                GameObj.ChessGame.DoNullMovePruning = mnCompNullMove.Checked;
+                GameObj.ChessGame.DoPrincipleVariation = mnuCompPrincipleVar.Checked;
+                GameObj.ChessGame.DoQuiescentSearch = mnuCompQuiescentSearch.Checked;
+            }
+        }
+
+        private void mnuFileExit_Click(object sender, System.EventArgs e)
 		{
 			Application.Exit();		// Send the terminate signal to all running threads
 		}
