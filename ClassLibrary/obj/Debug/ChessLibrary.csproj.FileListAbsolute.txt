@@ -14,3 +14,27 @@ C:\Users\thesh_30gz4\Downloads\CSChess\ClassLibrary\obj\Debug\Chessbrary.dll
 C:\Users\thesh_30gz4\Downloads\CSChess\ClassLibrary\obj\Debug\Chessbrary.pdb
 C:\Users\thesh_30gz4\Downloads\CSChess\ClassLibrary\bin\Debug\Chessbrary.dll
 C:\Users\thesh_30gz4\Downloads\CSChess\ClassLibrary\bin\Debug\Chessbrary.pdb
+C:\Users\thesh_30gz4\OneDrive - Neumont College of Computer Science\School Work\Year3\2025_Winter\Software Projects\CSChess\ClassLibrary\bin\Debug\Chessbrary.dll
+C:\Users\thesh_30gz4\OneDrive - Neumont College of Computer Science\School Work\Year3\2025_Winter\Software Projects\CSChess\ClassLibrary\bin\Debug\Chessbrary.pdb
+C:\Users\thesh_30gz4\OneDrive - Neumont College of Computer Science\School Work\Year3\2025_Winter\Software Projects\CSChess\ClassLibrary\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\thesh_30gz4\OneDrive - Neumont College of Computer Science\School Work\Year3\2025_Winter\Software Projects\CSChess\ClassLibrary\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\thesh_30gz4\OneDrive - Neumont College of Computer Science\School Work\Year3\2025_Winter\Software Projects\CSChess\ClassLibrary\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\thesh_30gz4\OneDrive - Neumont College of Computer Science\School Work\Year3\2025_Winter\Software Projects\CSChess\ClassLibrary\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\thesh_30gz4\OneDrive - Neumont College of Computer Science\School Work\Year3\2025_Winter\Software Projects\CSChess\ClassLibrary\bin\Debug\cs\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\thesh_30gz4\OneDrive - Neumont College of Computer Science\School Work\Year3\2025_Winter\Software Projects\CSChess\ClassLibrary\bin\Debug\de\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\thesh_30gz4\OneDrive - Neumont College of Computer Science\School Work\Year3\2025_Winter\Software Projects\CSChess\ClassLibrary\bin\Debug\es\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\thesh_30gz4\OneDrive - Neumont College of Computer Science\School Work\Year3\2025_Winter\Software Projects\CSChess\ClassLibrary\bin\Debug\fr\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\thesh_30gz4\OneDrive - Neumont College of Computer Science\School Work\Year3\2025_Winter\Software Projects\CSChess\ClassLibrary\bin\Debug\it\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\thesh_30gz4\OneDrive - Neumont College of Computer Science\School Work\Year3\2025_Winter\Software Projects\CSChess\ClassLibrary\bin\Debug\ja\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\thesh_30gz4\OneDrive - Neumont College of Computer Science\School Work\Year3\2025_Winter\Software Projects\CSChess\ClassLibrary\bin\Debug\ko\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\thesh_30gz4\OneDrive - Neumont College of Computer Science\School Work\Year3\2025_Winter\Software Projects\CSChess\ClassLibrary\bin\Debug\pl\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\thesh_30gz4\OneDrive - Neumont College of Computer Science\School Work\Year3\2025_Winter\Software Projects\CSChess\ClassLibrary\bin\Debug\pt-BR\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\thesh_30gz4\OneDrive - Neumont College of Computer Science\School Work\Year3\2025_Winter\Software Projects\CSChess\ClassLibrary\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\thesh_30gz4\OneDrive - Neumont College of Computer Science\School Work\Year3\2025_Winter\Software Projects\CSChess\ClassLibrary\bin\Debug\tr\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\thesh_30gz4\OneDrive - Neumont College of Computer Science\School Work\Year3\2025_Winter\Software Projects\CSChess\ClassLibrary\bin\Debug\zh-Hans\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\thesh_30gz4\OneDrive - Neumont College of Computer Science\School Work\Year3\2025_Winter\Software Projects\CSChess\ClassLibrary\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\Users\thesh_30gz4\OneDrive - Neumont College of Computer Science\School Work\Year3\2025_Winter\Software Projects\CSChess\ClassLibrary\obj\Debug\ChessLibrary.csproj.AssemblyReference.cache
+C:\Users\thesh_30gz4\OneDrive - Neumont College of Computer Science\School Work\Year3\2025_Winter\Software Projects\CSChess\ClassLibrary\obj\Debug\ChessLibrary.csproj.CoreCompileInputs.cache
+C:\Users\thesh_30gz4\OneDrive - Neumont College of Computer Science\School Work\Year3\2025_Winter\Software Projects\CSChess\ClassLibrary\obj\Debug\ChessLib.9BB18053.Up2Date
+C:\Users\thesh_30gz4\OneDrive - Neumont College of Computer Science\School Work\Year3\2025_Winter\Software Projects\CSChess\ClassLibrary\obj\Debug\Chessbrary.dll
+C:\Users\thesh_30gz4\OneDrive - Neumont College of Computer Science\School Work\Year3\2025_Winter\Software Projects\CSChess\ClassLibrary\obj\Debug\Chessbrary.pdb

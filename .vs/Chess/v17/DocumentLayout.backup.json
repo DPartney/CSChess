@@ -3,7 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\thesh_30gz4\\OneDrive - Neumont College of Computer Science\\School Work\\Year3\\2025_Winter\\Software Projects\\CSChess\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D8101490-CE6A-4055-9A26-EAA9274E137E}|ChessTester\\ChessTester.csproj|c:\\users\\thesh_30gz4\\onedrive - neumont college of computer science\\school work\\year3\\2025_winter\\software projects\\cschess\\chesstester\\boardtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8101490-CE6A-4055-9A26-EAA9274E137E}|ChessTester\\ChessTester.csproj|solutionrelative:chesstester\\boardtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\thesh_30gz4\\Downloads\\CSChess\\ClassLibrary\\Board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49ACB103-97A2-437A-AA64-38CD41A1DB51}|ClassLibrary\\ChessLibrary.csproj|c:\\users\\thesh_30gz4\\onedrive - neumont college of computer science\\school work\\year3\\2025_winter\\software projects\\cschess\\classlibrary\\chesscells.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49ACB103-97A2-437A-AA64-38CD41A1DB51}|ClassLibrary\\ChessLibrary.csproj|solutionrelative:classlibrary\\chesscells.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49ACB103-97A2-437A-AA64-38CD41A1DB51}|ClassLibrary\\ChessLibrary.csproj|c:\\users\\thesh_30gz4\\onedrive - neumont college of computer science\\school work\\year3\\2025_winter\\software projects\\cschess\\classlibrary\\cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49ACB103-97A2-437A-AA64-38CD41A1DB51}|ClassLibrary\\ChessLibrary.csproj|solutionrelative:classlibrary\\cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4265F8F0-1709-4C20-ACD2-903D603FD67A}|Chess\\Chess.csproj|c:\\users\\thesh_30gz4\\onedrive - neumont college of computer science\\school work\\year3\\2025_winter\\software projects\\cschess\\chess\\gameui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4265F8F0-1709-4C20-ACD2-903D603FD67A}|Chess\\Chess.csproj|solutionrelative:chess\\gameui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -13,17 +29,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ChessCells.cs",
+              "DocumentMoniker": "C:\\Users\\thesh_30gz4\\OneDrive - Neumont College of Computer Science\\School Work\\Year3\\2025_Winter\\Software Projects\\CSChess\\ClassLibrary\\ChessCells.cs",
+              "RelativeDocumentMoniker": "ClassLibrary\\ChessCells.cs",
+              "ToolTip": "C:\\Users\\thesh_30gz4\\OneDrive - Neumont College of Computer Science\\School Work\\Year3\\2025_Winter\\Software Projects\\CSChess\\ClassLibrary\\ChessCells.cs",
+              "RelativeToolTip": "ClassLibrary\\ChessCells.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T09:18:17.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cell.cs",
+              "DocumentMoniker": "C:\\Users\\thesh_30gz4\\OneDrive - Neumont College of Computer Science\\School Work\\Year3\\2025_Winter\\Software Projects\\CSChess\\ClassLibrary\\Cell.cs",
+              "RelativeDocumentMoniker": "ClassLibrary\\Cell.cs",
+              "ToolTip": "C:\\Users\\thesh_30gz4\\OneDrive - Neumont College of Computer Science\\School Work\\Year3\\2025_Winter\\Software Projects\\CSChess\\ClassLibrary\\Cell.cs",
+              "RelativeToolTip": "ClassLibrary\\Cell.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T09:17:57.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GameUI.cs",
+              "DocumentMoniker": "C:\\Users\\thesh_30gz4\\OneDrive - Neumont College of Computer Science\\School Work\\Year3\\2025_Winter\\Software Projects\\CSChess\\Chess\\GameUI.cs",
+              "RelativeDocumentMoniker": "Chess\\GameUI.cs",
+              "ToolTip": "C:\\Users\\thesh_30gz4\\OneDrive - Neumont College of Computer Science\\School Work\\Year3\\2025_Winter\\Software Projects\\CSChess\\Chess\\GameUI.cs",
+              "RelativeToolTip": "Chess\\GameUI.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAiwGAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T08:56:00.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "BoardTests.cs",
+              "DocumentMoniker": "C:\\Users\\thesh_30gz4\\OneDrive - Neumont College of Computer Science\\School Work\\Year3\\2025_Winter\\Software Projects\\CSChess\\ChessTester\\BoardTests.cs",
+              "RelativeDocumentMoniker": "ChessTester\\BoardTests.cs",
+              "ToolTip": "C:\\Users\\thesh_30gz4\\OneDrive - Neumont College of Computer Science\\School Work\\Year3\\2025_Winter\\Software Projects\\CSChess\\ChessTester\\BoardTests.cs",
+              "RelativeToolTip": "ChessTester\\BoardTests.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAvwEEAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T08:43:12.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Board.cs",
               "DocumentMoniker": "C:\\Users\\thesh_30gz4\\Downloads\\CSChess\\ClassLibrary\\Board.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Downloads\\CSChess\\ClassLibrary\\Board.cs",
               "ToolTip": "C:\\Users\\thesh_30gz4\\Downloads\\CSChess\\ClassLibrary\\Board.cs",
               "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Downloads\\CSChess\\ClassLibrary\\Board.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAGgAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-19T07:58:10.275Z",
               "EditorCaption": ""
